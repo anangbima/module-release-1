@@ -1,16 +1,16 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Providers\Concerns;
+namespace Modules\ModuleRelease1\Providers\Concerns;
 
-use Modules\DesaModuleTemplate\Models\Permission;
-use Modules\DesaModuleTemplate\Models\Role;
+use Modules\ModuleRelease1\Models\Permission;
+use Modules\ModuleRelease1\Models\Role;
 
 trait ConfigurePermissions
 {
     protected function configurePermissions(): void
     {
-        $prefix = 'desa_module_template_';
-        $connection = 'desa_module_template';
+        $prefix = 'module_release_1_';
+        $connection = 'module_release_1';
 
         config([
             'permission.models.role' => Role::class,

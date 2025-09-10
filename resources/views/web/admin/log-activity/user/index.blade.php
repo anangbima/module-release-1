@@ -1,13 +1,13 @@
-<x-desa-module-template::admin-layout
+<x-module-release-1::admin-layout
     :title="__($title)"
     :role="'Admin'"
-    :module="__(desa_module_template_meta('label'))"
+    :module="__(module_release_1_meta('label'))"
     :desa="config('app.name')"
     :breadcrumbs="$breadcrumbs"
 >
     {{-- Table Section --}}
-    <x-desa-module-template::log-activity-table 
+    <x-module-release-1::log-activity-table 
         :logs="$logs"
     />
 
-</x-desa-module-template::admin-layout>
+</x-module-release-1::admin-layout>

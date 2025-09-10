@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Http\Controllers\Api\Internal\Auth;
+namespace Modules\ModuleRelease1\Http\Controllers\Api\Internal\Auth;
 
 use Illuminate\Http\Request;
-use Modules\DesaModuleTemplate\Http\Controllers\Controller;
-use Modules\DesaModuleTemplate\Services\Auth\AuthenticationApiService;
-use Modules\DesaModuleTemplate\Services\Shared\ApiResponseService;
+use Modules\ModuleRelease1\Http\Controllers\Controller;
+use Modules\ModuleRelease1\Services\Auth\AuthenticationApiService;
+use Modules\ModuleRelease1\Services\Shared\ApiResponseService;
 
 class EmailVerificationPromptController extends Controller
 {
@@ -19,7 +19,7 @@ class EmailVerificationPromptController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $user = $request->user(desa_module_template_meta('snake').'_api');
+        $user = $request->user(module_release_1_meta('snake').'_api');
 
         if ($user && $user->hasVerifiedEmail()) {
             return $this->apiResponseService->success(

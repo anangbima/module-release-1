@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Http\Controllers\Web\Admin;
+namespace Modules\ModuleRelease1\Http\Controllers\Web\Admin;
 
 use Illuminate\Http\Request;
-use Modules\DesaModuleTemplate\Http\Controllers\Controller;
-use Modules\DesaModuleTemplate\Models\User;
-use Modules\DesaModuleTemplate\Services\Admin\UserService;
+use Modules\ModuleRelease1\Http\Controllers\Controller;
+use Modules\ModuleRelease1\Models\User;
+use Modules\ModuleRelease1\Services\Admin\UserService;
 
 class UserStatusController extends Controller
 {
@@ -22,6 +22,6 @@ class UserStatusController extends Controller
         $status = $request->boolean('status');
         $this->userService->toggleStatus($user->id, $status);
 
-       return redirect()->route(desa_module_template_meta('kebab').'.admin.users.index')->with('success', 'User status updated successfully.');
+       return redirect()->route(module_release_1_meta('kebab').'.admin.users.index')->with('success', 'User status updated successfully.');
     }
 }

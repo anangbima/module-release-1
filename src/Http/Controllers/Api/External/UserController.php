@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Http\Controllers\Api\External;
+namespace Modules\ModuleRelease1\Http\Controllers\Api\External;
 
 use Illuminate\Http\Request;
-use Modules\DesaModuleTemplate\Http\Controllers\Controller;
-use Modules\DesaModuleTemplate\Http\Resources\Admin\UserResource;
-use Modules\DesaModuleTemplate\Services\Admin\UserService;
-use Modules\DesaModuleTemplate\Services\Shared\ApiResponseService;
+use Modules\ModuleRelease1\Http\Controllers\Controller;
+use Modules\ModuleRelease1\Http\Resources\Admin\UserResource;
+use Modules\ModuleRelease1\Services\Admin\UserService;
+use Modules\ModuleRelease1\Services\Shared\ApiResponseService;
 
 class UserController extends Controller
 {

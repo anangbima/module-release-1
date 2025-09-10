@@ -1,8 +1,8 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Services\User;
+namespace Modules\ModuleRelease1\Services\User;
 
-use Modules\DesaModuleTemplate\Services\Shared\LogActivityService as SharedLogActivityService;
+use Modules\ModuleRelease1\Services\Shared\LogActivityService as SharedLogActivityService;
 
 class LogActivityService extends SharedLogActivityService
 {

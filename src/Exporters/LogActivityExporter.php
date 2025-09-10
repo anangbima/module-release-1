@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Exporters;
+namespace Modules\ModuleRelease1\Exporters;
 
 use Illuminate\Support\Collection;
-use Modules\DesaModuleTemplate\Services\Shared\ExportService;
+use Modules\ModuleRelease1\Services\Shared\ExportService;
 
 class LogActivityExporter extends BaseExporter
 {

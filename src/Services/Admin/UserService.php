@@ -1,13 +1,13 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Services\Admin;
+namespace Modules\ModuleRelease1\Services\Admin;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
-use Modules\DesaModuleTemplate\Repositories\Interfaces\UserRepositoryInterface;
-use Modules\DesaModuleTemplate\Services\Shared\ExportService;
-use Modules\DesaModuleTemplate\Services\Shared\LogActivityService;
-use Modules\DesaModuleTemplate\Services\Shared\NotificationService;
+use Modules\ModuleRelease1\Repositories\Interfaces\UserRepositoryInterface;
+use Modules\ModuleRelease1\Services\Shared\ExportService;
+use Modules\ModuleRelease1\Services\Shared\LogActivityService;
+use Modules\ModuleRelease1\Services\Shared\NotificationService;
 
 class UserService
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Http\Controllers\Web\Auth;
+namespace Modules\ModuleRelease1\Http\Controllers\Web\Auth;
 
 use Illuminate\Http\Request;
-use Modules\DesaModuleTemplate\Http\Controllers\Controller;
-use Modules\DesaModuleTemplate\Services\Auth\AuthenticationService;
+use Modules\ModuleRelease1\Http\Controllers\Controller;
+use Modules\ModuleRelease1\Services\Auth\AuthenticationService;
 
 class EmailVerificationNotificationController extends Controller
 {

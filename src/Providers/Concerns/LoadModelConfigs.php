@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Providers\Concerns;
+namespace Modules\ModuleRelease1\Providers\Concerns;
 
 trait LoadModelConfigs
 {
     protected function loadModelConfigs(): void
     {
-        $configDir = base_path('modules/desa-module-template/config');
+        $configDir = base_path('modules/module-release-1/config');
 
         if (!is_dir($configDir)) return;
 
@@ -20,7 +20,7 @@ trait LoadModelConfigs
 
                 $this->mergeConfigFrom(
                     $filePath,
-                    "desa_module_template.{$filename}.{$modelDir}"
+                    "module_release_1.{$filename}.{$modelDir}"
                 );
             }
         }

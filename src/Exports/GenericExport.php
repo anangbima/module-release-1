@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Exports;
+namespace Modules\ModuleRelease1\Exports;
 
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\FromCollection;

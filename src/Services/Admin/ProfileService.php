@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Services\Admin;
+namespace Modules\ModuleRelease1\Services\Admin;
 
-use Modules\DesaModuleTemplate\Repositories\Interfaces\LogActivityRepositoryInterface;
-use Modules\DesaModuleTemplate\Services\Shared\ProfileService as SharedProfileService;
+use Modules\ModuleRelease1\Repositories\Interfaces\LogActivityRepositoryInterface;
+use Modules\ModuleRelease1\Services\Shared\ProfileService as SharedProfileService;
 
 class ProfileService extends SharedProfileService
 {

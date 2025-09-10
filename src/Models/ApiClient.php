@@ -1,8 +1,8 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Models;
+namespace Modules\ModuleRelease1\Models;
 
-use Modules\DesaModuleTemplate\Traits\HasSlug;
+use Modules\ModuleRelease1\Traits\HasSlug;
 
 class ApiClient extends BaseModel
 {
@@ -13,7 +13,7 @@ class ApiClient extends BaseModel
      */
     protected function resolveTableName(): string
     {
-        return config('desa_module_template.tables.api_clients', 'api_clients');
+        return config('module_release_1.tables.api_clients', 'api_clients');
     }
 
     protected $guarded = ['id'];

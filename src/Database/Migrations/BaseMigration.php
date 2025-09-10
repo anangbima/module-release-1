@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Database\Migrations;
+namespace Modules\ModuleRelease1\Database\Migrations;
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\Schema;
@@ -12,9 +12,9 @@ abstract class BaseMigration extends Migration
      */
     public function getConnection(): ?string
     {
-        return env('DESA_MODULE_TEMPLATE_DB_CONNECTION')
-            ?? config('desa_module_template.database.database_connection')
-            ?? 'desa_module_template';
+        return env('MODULE_RELEASE_1_DB_CONNECTION')
+            ?? config('module_release_1.database.database_connection')
+            ?? 'module_release_1';
     }
 
     /**

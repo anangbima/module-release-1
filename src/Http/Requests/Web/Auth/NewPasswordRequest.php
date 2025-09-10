@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Http\Requests\Web\Auth;
+namespace Modules\ModuleRelease1\Http\Requests\Web\Auth;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
@@ -21,7 +21,7 @@ class NewPasswordRequest extends FormRequest
                 'required',
                 'email:rfc,dns',
                 Rule::exists(
-                    config(desa_module_template_meta('snake').'.database.database_connection', desa_module_template_meta('snake')) . '.' . config('users.tables.users', 'users'),
+                    config(module_release_1_meta('snake').'.database.database_connection', module_release_1_meta('snake')) . '.' . config('users.tables.users', 'users'),
                     'email'
                 ),
             ],

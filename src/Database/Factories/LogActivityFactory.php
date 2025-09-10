@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Database\Factories;
+namespace Modules\ModuleRelease1\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Modules\DesaModuleTemplate\Models\LogActivity;
+use Modules\ModuleRelease1\Models\LogActivity;
 
 class LogActivityFactory extends Factory
 {

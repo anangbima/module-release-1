@@ -1,35 +1,35 @@
 <?php
 
-use Modules\DesaModuleTemplate\Models\User;
+use Modules\ModuleRelease1\Models\User;
 
 return [
     // default guard for this module
-    'default' => 'desa_module_template_web',
+    'default' => 'module_release_1_web',
 
     // Custom guard for this module
     'guards' => [
-        'desa_module_template_web' => [
+        'module_release_1_web' => [
             'driver' => 'session',
-            'provider' => 'desa_module_template_users',
+            'provider' => 'module_release_1_users',
         ],
 
-        'desa_module_template_api' => [
+        'module_release_1_api' => [
             'driver' => 'jwt',
-            'provider' => 'desa_module_template_users',
+            'provider' => 'module_release_1_users',
         ],
     ],
 
     // Custom user provider for this module
     'providers' => [
-        'desa_module_template_users' => [
+        'module_release_1_users' => [
             'driver' => 'eloquent',
             'model' => User::class
         ],
     ],
 
     'passwords' => [
-        'desa_module_template_users' => [
-            'provider' => 'desa_module_template_users',
+        'module_release_1_users' => [
+            'provider' => 'module_release_1_users',
             'table' => 'password_reset_tokens',
             'expire' => 60,
             'throttle' => 60    

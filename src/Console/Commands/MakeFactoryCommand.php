@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Console\Commands;
+namespace Modules\ModuleRelease1\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
@@ -9,11 +9,11 @@ use Illuminate\Support\Str;
 class MakeFactoryCommand extends Command
 {
     protected $signature;
-    protected $description = 'Generate a new factory for model and migration for Desa Module Template';
+    protected $description = 'Generate a new factory for model and migration for Module Release 1';
 
     public function __construct()
     {
-        $this->signature = 'module:desamoduletemplate:make-factory
+        $this->signature = 'module:modulerelease1:make-factory
             {name : Model name (e.g. Table1)}';
 
         parent::__construct();
@@ -24,10 +24,10 @@ class MakeFactoryCommand extends Command
         $model = Str::studly($this->argument('name')); // misalnya: Product
         $className = $model . 'Factory';               // ProductFactory
 
-        $namespace = 'Modules\\DesaModuleTemplate\\Database\\Factories';
-        $targetPath = base_path('Modules/desa-module-template/src/Database/Factories/'.$className.'.php');
+        $namespace = 'Modules\\ModuleRelease1\\Database\\Factories';
+        $targetPath = base_path('Modules/module-release-1/src/Database/Factories/'.$className.'.php');
         $stubPath = __DIR__ . '/../../../stubs/factory.stub';
-        $modelNamespace = 'Modules\\DesaModuleTemplate\\Models\\' . $model;
+        $modelNamespace = 'Modules\\ModuleRelease1\\Models\\' . $model;
 
         File::ensureDirectoryExists(dirname($targetPath));
 

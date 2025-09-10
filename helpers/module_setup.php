@@ -57,12 +57,12 @@ if (!function_exists('generateModuleMeta')) {
         $cleanName = preg_replace('/\s+/', ' ', $cleanName);
 
         return [
-            'label'         => $cleanName, // "Desa Module Template"
-            'studly'        => str_replace(' ', '', ucwords(strtolower($cleanName))), // "Desa Module Template"
-            'kebab'         => strtolower(str_replace(' ', '-', $cleanName)), // "desa-module-template"
-            'snake'         => strtolower(str_replace(' ', '_', $cleanName)), // "desa_module_template"
-            'plain'         => strtolower(str_replace(' ', '', $cleanName)), // "desamoduletemplate"
-            'constant'      => strtoupper(str_replace(' ', '_', $cleanName)), // "DESA_MODULE_TEMPLATE"
+            'label'         => $cleanName, // "Module Release 1"
+            'studly'        => str_replace(' ', '', ucwords(strtolower($cleanName))), // "Module Release 1"
+            'kebab'         => strtolower(str_replace(' ', '-', $cleanName)), // "module-release-1"
+            'snake'         => strtolower(str_replace(' ', '_', $cleanName)), // "module_release_1"
+            'plain'         => strtolower(str_replace(' ', '', $cleanName)), // "modulerelease1"
+            'constant'      => strtoupper(str_replace(' ', '_', $cleanName)), // "MODULE_RELEASE_1"
         ];
     }
 }

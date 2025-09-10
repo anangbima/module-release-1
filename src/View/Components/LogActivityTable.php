@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\View\Components;
+namespace Modules\ModuleRelease1\View\Components;
 
 use Illuminate\View\Component;
 
@@ -12,11 +12,11 @@ class LogActivityTable extends Component
     public function __construct($logs, $role = null)
     {
         $this->logs = $logs;
-        $this->role = $this->role = $role ?? desa_module_template_auth_user()?->role;
+        $this->role = $this->role = $role ?? module_release_1_auth_user()?->role;
     }
     
     public function render()
     {
-        return view(desa_module_template_meta('kebab').'::components.log-activity-table');
+        return view(module_release_1_meta('kebab').'::components.log-activity-table');
     }
 }

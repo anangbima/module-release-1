@@ -1,6 +1,6 @@
 <?php 
 
-namespace Modules\DesaModuleTemplate\Services\Shared;
+namespace Modules\ModuleRelease1\Services\Shared;
 
 class ApiResponseService
 {

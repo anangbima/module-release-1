@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Database\Factories;
+namespace Modules\ModuleRelease1\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
-use Modules\DesaModuleTemplate\Models\Notification;
-use Modules\DesaModuleTemplate\Models\User;
+use Modules\ModuleRelease1\Models\Notification;
+use Modules\ModuleRelease1\Models\User;
 
 class NotificationFactory extends Factory
 {

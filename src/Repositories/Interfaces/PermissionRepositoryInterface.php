@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Repositories\Interfaces;
+namespace Modules\ModuleRelease1\Repositories\Interfaces;
 
 interface PermissionRepositoryInterface
 {

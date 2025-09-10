@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Http\Controllers\Api\Internal\Auth;
+namespace Modules\ModuleRelease1\Http\Controllers\Api\Internal\Auth;
 
 use Illuminate\Http\Request;
-use Modules\DesaModuleTemplate\Http\Controllers\Controller;
-use Modules\DesaModuleTemplate\Http\Requests\Api\Auth\ChangePasswordRequest;
-use Modules\DesaModuleTemplate\Services\Auth\AuthenticationApiService;
-use Modules\DesaModuleTemplate\Services\Shared\ApiResponseService;
+use Modules\ModuleRelease1\Http\Controllers\Controller;
+use Modules\ModuleRelease1\Http\Requests\Api\Auth\ChangePasswordRequest;
+use Modules\ModuleRelease1\Services\Auth\AuthenticationApiService;
+use Modules\ModuleRelease1\Services\Shared\ApiResponseService;
 
 class ChangePasswordController extends Controller
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Services\Shared;
+namespace Modules\ModuleRelease1\Services\Shared;
 
-use Modules\DesaModuleTemplate\Models\Permission;
-use Modules\DesaModuleTemplate\Models\Role;
+use Modules\ModuleRelease1\Models\Permission;
+use Modules\ModuleRelease1\Models\Role;
 use Spatie\Permission\PermissionRegistrar as SpatiePermissionRegistrar;
 
 class PermissionRegistrar extends SpatiePermissionRegistrar

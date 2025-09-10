@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Models;
+namespace Modules\ModuleRelease1\Models;
 
 class MediaUsage extends BaseModel
 {
@@ -9,7 +9,7 @@ class MediaUsage extends BaseModel
      */
     protected function resolveTableName(): string
     {
-        return config('desa_module_template.tables.media_usages', 'media_usages');
+        return config('module_release_1.tables.media_usages', 'media_usages');
     }
 
     protected $guarded = ['id'];

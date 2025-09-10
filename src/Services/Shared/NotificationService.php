@@ -1,15 +1,15 @@
 <?php
 
-namespace Modules\DesaModuleTemplate\Services\Shared;
+namespace Modules\ModuleRelease1\Services\Shared;
 
 use DesaDigitalSupport\NotificationProvider\Contracts\NotificationProviderInterface;
 use Illuminate\Support\Collection;
-use Modules\DesaModuleTemplate\Repositories\Interfaces\UserRepositoryInterface;
-use Modules\DesaModuleTemplate\Notifications\GeneralNotification;
+use Modules\ModuleRelease1\Repositories\Interfaces\UserRepositoryInterface;
+use Modules\ModuleRelease1\Notifications\GeneralNotification;
 
 class NotificationService implements NotificationProviderInterface
 {
-    public string $module = 'desa-module-template';
+    public string $module = 'module-release-1';
     
     public function __construct(
         protected UserRepositoryInterface $userRepository,
@@ -19,7 +19,7 @@ class NotificationService implements NotificationProviderInterface
     public function getAllByUser(?string $userId = null): array
     {
         if (empty($userId)) {
-            $userId = desa_module_template_auth_user()->id;
+            $userId = module_release_1_auth_user()->id;
         }
 
         $user = $this->userRepository->find($userId);

@@ -1,10 +1,10 @@
-<x-desa-module-template::user-layout :
+<x-module-release-1::user-layout :
     :title="__($title)"
     :role="'User'"
-    :module="__(desa_module_template_meta('label'))"
+    :module="__(module_release_1_meta('label'))"
     :desa="config('app.name')"
     :breadcrumbs="$breadcrumbs"
 >
     
 
-</x-desa-module-template::user-layout>
+</x-module-release-1::user-layout>
